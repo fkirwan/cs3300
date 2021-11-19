@@ -17,5 +17,6 @@ module ControllerMacros
         sign_in user
     end
     # different logins here
+    #
 
 end
