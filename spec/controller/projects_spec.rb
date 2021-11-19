@@ -2,7 +2,8 @@ require "rails_helper"
 
 RSpec.describe ProjectsController, type: :controller do
   # Add this
-  login_user
+  # user = FactoryBot.create(:user)
+  # login_user(user)
 
   # let(:valid_attributes) {
   #     { :title => "Test title!", :description => "This is a test description", :status => "draft" }
