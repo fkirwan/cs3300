@@ -1,16 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4"><%= @project.title %></h1>
+    <p><%= @project.description %></p>
+  </div>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
+<div class="btn btn-secondary">
+  <%= link_to 'Edit', edit_project_path(@project) %></td> |
+  <%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %></td> |
+  <%= link_to 'Back', projects_path %>
+</div>
 
 
-<%= link_to 'Edit', edit_project_path(@project) %></td> |
-<%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %></td> |
-<%= link_to 'Back', projects_path %>
