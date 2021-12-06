@@ -78,4 +78,4 @@ group :development, :test do
 end
 
 gem 'bootstrap', '~> 4.6.1'
-
+gem 'jquery-rails'
