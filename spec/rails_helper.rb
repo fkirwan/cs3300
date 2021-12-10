@@ -79,4 +79,5 @@ SimpleCov.start 'rails' do
   add_filter 'channel.rb'
   add_filter 'connection.rb'
   add_filter 'application_mailer.rb'
+  add_filter 'application_record.rb'
 end
