@@ -37,7 +37,8 @@
 
 <p id="notice"><%= notice %></p>
 
-<div class="btn btn-primary">
-  <%= link_to 'New Project', new_project_path, :class => "btn" %>
-</div>
-
+<% if current_user %>
+  <div class="btn btn-primary">
+    <%= link_to 'New Project', new_project_path, :class => "btn" %>
+  </div>
+<% end %>
